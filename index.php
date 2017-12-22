@@ -10,7 +10,7 @@
 	</head>
 	<body>
 	
-		<span class="openMenu"><a href="#" onclick="openNav();">&#9776;</a></span>
+		<span class="openMenu" onclick="openNav();">&#9776;</span>
 		<nav id="mySideNav" class="sidenav">
 			<a href="#" class="closeBtn" onclick="closeNav();">&times;</a>
 			

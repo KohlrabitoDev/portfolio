@@ -1,5 +1,10 @@
 /* Styles for sidenav */
-body{background-color: red;}
+.openMenu{
+	position: fixed;
+	font-size: 40px;
+	margin-left: 0.4em;
+	cursor: pointer;
+}
 .sidenav {
     height: 100%;
     width: 0;
