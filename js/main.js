@@ -2,8 +2,10 @@
 
 const openNav = () =>{
 	document.getElementById("mySideNav").style.width = "250px";
+	document.getElementById("navTextWrapper").style.display = "block";
 }
 
 const closeNav = () =>{
 	document.getElementById("mySideNav").style.width = "0";
+	document.getElementById("navTextWrapper").style.display = "none";
 }

@@ -12,12 +12,43 @@
 	
 		<span class="openMenu" onclick="openNav();">&#9776;</span>
 		<nav id="mySideNav" class="sidenav">
-			<a href="#" class="closeBtn" onclick="closeNav();">&times;</a>
-			
-			<a href="#">Link One</a>
-			<a href="#">Link Two</a>
-			<a href="#">Link Three</a>
+			<div id="navTextWrapper">
+				<div class="navBrandExit">
+					<a href="#" class="brand">Kenneth Rhodes</a><a href="#" class="closeBtn" onclick="event.preventDefault(); closeNav();">&times;</a>
+				</div>
+				
+				<a href="#">Top</a><!-- Remember to move this to a bottom right arrow. -->
+				<a href="#about">About</a>
+				<a href="#blog">Blog</a>
+				<a href="#contact">Contact</a>
+				
+				<!-- Add some buttons like: inverted color scheme, night mode,  -->
+			</div>
 		</nav>
+		
+		<header>
+			<h3>Let's Create A Website, <span class="text-success">Together</span></h3>
+		</header>
+		
+		<section id="about">
+			<div class="container-fluid">
+			
+			</div>
+		</section>
+		
+		<section id="blog">
+			<div class="container-fluid">
+			
+			</div>
+		</section>
+		
+		<section id="contact">
+		
+		</section>
+		
+		<footer>
+			<!-- Add SM -->
+		</footer>
 	
 		<!-- jQuery library -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
