@@ -26,10 +26,13 @@
 		</nav>
 		
 		<!-- I made this top button :D -->
-		<a id="topButton" href="#">^</a>
+		<a id="topButton" href="#header">^</a>
 		
-		<header>
-			<h3>Let's Create A Website, <span class="text-success">Together</span></h3>
+		<header id="header">
+			<h3>Let's Create A Website, <span style="color: lime;">Together</span></h3>
+			
+			<!-- And this info circle -->
+			<a class="infoCircle" href="#" data-toggle="tooltip" data-html="true" title="<a href='https://www.pexels.com/photo/adult-architect-blueprint-business-416405/' target='_blank'>Background photo credits</a>">?</a>
 			
 			<!-- Create Next Button -->
 		</header>
@@ -74,5 +77,6 @@
 		
 		<!-- Custom Scripts -->
 		<script src="js/main.js"></script>
+		<script src="js/smoothScroll.js"></script>
 	</body>
 </html>

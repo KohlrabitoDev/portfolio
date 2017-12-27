@@ -1,3 +1,8 @@
+// Enable Tooltips Everywhere
+$(function () {
+	$('[data-toggle="tooltip"]').tooltip();
+});
+
 // For sideNav, https://www.w3schools.com/howto/howto_js_sidenav.asp
 
 const openNav = () =>{
