@@ -1,6 +1,6 @@
 /* Globals */
 body{
-	
+	overflow-x: hidden;
 }
 
 #topButton{
@@ -124,7 +124,6 @@ header{
 #about{
 	display: flex;
 	height: 100vh;
-	overflow: hidden;
 	background-color: black;
 	padding: 0.7em 1em 0.7em 1em;
 	color: #fff;
