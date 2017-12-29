@@ -1,7 +1,7 @@
 /* Globals */
-body{
-	overflow-x: hidden;
-}
+body{overflow-x: hidden;}
+
+a:link{text-decoration: none;}
 
 #topButton{
 	display: flex;
@@ -52,6 +52,7 @@ body{
 	font-size: 40px;
 	margin-left: 0.4em;
 	cursor: pointer;
+	color: #fff;
 }
 .sidenav {
     height: 100%;
@@ -133,6 +134,8 @@ header{
 #about p{
 	padding-top: 1em;
 }
+
+#about .col{padding: 5px;}
 
 /* Warning */
 #warning{
