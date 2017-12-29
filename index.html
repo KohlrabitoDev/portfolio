@@ -64,7 +64,41 @@
 		
 		<section id="contact">
 			<div class="container-fluid">
-			
+				
+				<form action="#" method="post">
+					<select name="iama" required>
+						<option value="I am a" disabled selected>I am a...</option>
+						
+						<option value="corporation">Corporation</option>
+						<option value="business">Business</option>
+						<option value="Individual">Individual</option>
+					</select>
+					
+					<select name="looking" required>
+						<option value="Looking for a" disabled selected>Looking for a...</option>
+						
+						<option value="full-time">Full-Time Employee</option>
+						<option value="part-time">Part-Time Employee</option>
+						<option value="quick">Quick Website</option>
+					</select>
+					
+					<!-- Output Price Here -->
+					
+					<input type="text" name="name" placeholder="Full Name" required>
+					<!--<input type="text" name="company" placeholder="Company Name"> (Only show if Corporation or Business) -->
+					
+					<input type="email" name="email" placeholder="Personal/Work Email" required>
+					
+					<textarea name="desc" placeholder="Description of project..." required></textarea>
+					
+					<input type="file" name="wireframes" multiple>
+					
+					I agree to the terms of use<input type="checkbox" required>
+					<!-- Add captcha here. required -->
+					
+					<input type="submit">
+				</form>
+				
 			</div>
 		</section>
 		
