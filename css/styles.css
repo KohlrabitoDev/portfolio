@@ -156,6 +156,15 @@ header h3{
 
 #contact form .checkbox-kt{float: right;}
 
+/* Footer */
+footer{height: 200px; background-color: #111; color: #fff; text-align: center; padding-top: 1em;}
+
+footer p{}
+
+footer #social{font-size: 32px;}
+
+footer #social i.fa{margin: 0 5px 0 5px;}
+
 /* Media Queries */
 @media screen and (max-height: 450px) { /* Smaller displays */
   .sidenav {padding-top: 15px;}
