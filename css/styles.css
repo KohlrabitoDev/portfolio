@@ -42,9 +42,7 @@ a:link{text-decoration: none;}
 	font-size: 1.5em;
 }
 
-.infoCircle:link{text-decoration: none;}
-
-.infoCircle:focus{color: #fff;}
+.infoCircle:link{text-decoration: none; color: #fff;}
 
 /* Styles for sidenav */
 .openMenu{
@@ -112,7 +110,7 @@ header:before{
 	width: 100%;
 	height: 100vh;
 	
-	filter: blur(0.4em); /* e.g 0.4 = 40% */
+	filter: blur(0.6em); /* e.g 0.4 = 40% */
 }
 
 header{
@@ -120,6 +118,12 @@ header{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+header h3{
+	background-color: rgba(255, 255, 255, 0.2);
+	padding: 1.2em;
+	
 }
 
 /* About */
@@ -137,24 +141,33 @@ header{
 
 #about .col{padding: 5px;}
 
-/* Warning */
-#warning{
-	display: flex;
-	height: 200px;
-	align-items: center;
-	justify-content: center;
-	background-color: red;
-	color: #fff;
+/* Contact */
+#contact{height: 100vh; padding: 3em 1em; display: flex; justify-content: space-between;}
+
+#contact form{}
+
+#contact form .select-group{
+	margin-bottom: 0.7em;
 }
 
+#contact form select[name="looking"]{float: right;}
+
+#contact form input[type="text"], #contact form input[type="email"]{width: 100%;}
+
+#contact form .checkbox-kt{float: right;}
+
 /* Media Queries */
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 450px) { /* Smaller displays */
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 450px) { /* Mobile */
 	header h3{
-		font-size: 1.5em;
+		font-size: 1.3em;
 	}
+}
+
+@media screen and (min-width: 2000px) { /* 4K TV */
+	body{}
 }

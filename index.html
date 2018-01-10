@@ -65,8 +65,8 @@
 		<section id="contact">
 			<div class="container-fluid">
 				
-				<form action="#" method="post">
-					<select name="iama" required>
+				<form action="#" method="post" class="form-group">
+					<div class="select-group"><select name="iama" class="btn" required>
 						<option value="I am a" disabled selected>I am a...</option>
 						
 						<option value="corporation">Corporation</option>
@@ -74,28 +74,28 @@
 						<option value="Individual">Individual</option>
 					</select>
 					
-					<select name="looking" required>
+					<select name="looking" class="btn" required>
 						<option value="Looking for a" disabled selected>Looking for a...</option>
 						
 						<option value="full-time">Full-Time Employee</option>
 						<option value="part-time">Part-Time Employee</option>
 						<option value="quick">Quick Website</option>
-					</select>
-					
+					</select></div>
+					<br>
 					<!-- Output Price Here -->
 					
-					<input type="text" name="name" placeholder="Full Name" required>
-					<!--<input type="text" name="company" placeholder="Company Name"> (Only show if Corporation or Business) -->
-					
-					<input type="email" name="email" placeholder="Personal/Work Email" required>
-					
-					<textarea name="desc" placeholder="Description of project..." required></textarea>
-					
+					<input type="text" name="name" placeholder="Full Name" class="form-control" required>
+					<!--<br><input type="text" name="company" placeholder="Company Name"> (Only show if Corporation or Business) -->
+					<br>
+					<input type="email" name="email" placeholder="Personal/Work Email" class="form-control" required>
+					<br>
+					<textarea name="desc" placeholder="Description of project..." class="form-control" required></textarea>
+					<br>
 					<input type="file" name="wireframes" multiple>
 					
-					I agree to the terms of use<input type="checkbox" required>
+					<div class="checkbox-kt">I agree to the terms of use&nbsp;<input type="checkbox" required></div>
 					<!-- Add captcha here. required -->
-					
+					<br><br>
 					<input type="submit">
 				</form>
 				
