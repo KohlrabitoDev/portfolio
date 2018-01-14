@@ -1,6 +1,8 @@
 /* Globals */
 body{overflow-x: hidden;}
 
+.btn-success{background-color: lime; border-color: lime;}
+
 a:link{text-decoration: none;}
 
 #pageNav{
@@ -175,6 +177,12 @@ footer #social i.fa{margin: 0 5px 0 5px;}
 	header h3{font-size: 1.3em;}
 	#about{padding: 0.7em 0 0.7em 0;}
 	#about p span.extra-content{display: none;}
+	
+	#contact form select{width: 100%;}
+	#contact form select[name="iama"]{margin-bottom: 0.5em;}
+	#contact form select[name="looking"]{float: none;}
+	#contact form .checkbox-kt{float: none;}
+	#contact form input[type="submit"]{width: 100%; margin-top: 1em;}
 }
 
 @media screen and (min-width: 2000px) { /* 4K TV */
