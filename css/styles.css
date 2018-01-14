@@ -3,46 +3,46 @@ body{overflow-x: hidden;}
 
 a:link{text-decoration: none;}
 
-#topButton{
+#pageNav{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#topButton, #nextButton,#infoCircle{
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	position: fixed;
-	right: 0;
-	bottom: 0;
-	margin: 0 20px 20px 0;
 	width: 50px;
 	height: 50px;
 	border-radius: 100%;
-	
+	bottom: 0;
 	
 	background-color: lime;
 	color: #fff;
 	text-align: center;
 	font-size: 1.5em;
+}
+
+#topButton{
+	right: 0;
+	margin: 0 20px 20px 0;
+}
+
+#nextButton{
+	transform: rotate(180deg);
+	margin: 0 0 20px 0;
+}
+
+#infoCircle{
+	margin: 0 0 20px 20px;
+	left: 0;
 }
 
 #topButton:link{text-decoration: none;}
 
-.infoCircle{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	margin: 0 0 20px 20px;
-	width: 50px;
-	height: 50px;
-	border-radius: 100%;
-	
-	background-color: lime;
-	color: #fff;
-	text-align: center;
-	font-size: 1.5em;
-}
-
-.infoCircle:link{text-decoration: none; color: #fff;}
+#infoCircle:link{text-decoration: none; color: #fff;}
 
 /* Styles for sidenav */
 .openMenu{
@@ -135,6 +135,10 @@ header h3{
 
 #about p{padding-top: 1em;}
 
+#about p span.extra-content{}
+
+#about p span.read-more{}
+
 #about .col{padding: 5px;}
 
 /* Contact */
@@ -170,6 +174,7 @@ footer #social i.fa{margin: 0 5px 0 5px;}
 @media screen and (max-width: 450px) { /* Mobile */
 	header h3{font-size: 1.3em;}
 	#about{padding: 0.7em 0 0.7em 0;}
+	#about p span.extra-content{display: none;}
 }
 
 @media screen and (min-width: 2000px) { /* 4K TV */
