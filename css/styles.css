@@ -81,18 +81,16 @@ header h4{
 #about{
 	display: flex;
 	height: 100vh;
-	background-color: #000;
-	padding: 0.7em 1em 0.7em 1em;
+	background-color: teal;
+	padding-top: 1em;
 	color: #fff;
 }
 
 #about p{padding-top: 1em;}
 
-#about p span.extra-content{}
+#about .portfolio-images{padding-top: 2em;}
 
-#about p span.read-more{}
-
-#about .col{padding: 5px;}
+#about .portfolio-images .col{padding: 5px;}
 
 /* Contact */
 #contact{height: 100vh; padding: 3em 1em;}
@@ -125,7 +123,10 @@ footer #social i.fa{margin: 0 5px 0 5px;}
 }
 
 @media screen and (max-width: 450px) { /* Mobile */
-	header h3{font-size: 1.3em;}
+	header{padding: 6em 0 0 1em !important;}
+	header h3{font-size: 3em;}
+	header h4{font-size: 1.6em;}
+	
 	#about{padding: 0.7em 0 0.7em 0;}
 	#about p span.extra-content{display: none;}
 	
