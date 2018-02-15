@@ -1,9 +1,7 @@
 /* Globals */
 body{overflow-x: hidden;}
-
 /* Override Bootstrap Success Colors to Lime */
 .text-success{color: lime !important;}
-
 .btn-success{background-color: lime; border-color: lime;}
 
 a:link{text-decoration: none;}
@@ -29,11 +27,7 @@ a:link{text-decoration: none;}
     transition: 0.2s;
     padding-top: 30px;
 }
-
-.sidenav #navTextWrapper{
-	display: none;
-}
-
+.sidenav #navTextWrapper{display: none;}
 .sidenav a, .sidenav .brand{
     padding: 8px 8px 8px 20px;
     text-decoration: none;
@@ -41,41 +35,20 @@ a:link{text-decoration: none;}
     color: #818181;
     display: block;
 }
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .brand{
-	font-size: 1.4em;
-}
-
-.sidenav .closeBtn, .sidenav .brand{
-	display: inline-block;
-}
-
-.sidenav .closeBtn {
-    font-size: 36px;
-	text-align: right;
-}
+.sidenav a:hover {color: #f1f1f1;}
+.sidenav .brand{font-size: 1.4em;}
+.sidenav .closeBtn, .sidenav .brand{display: inline-block;}
+.sidenav .closeBtn {font-size: 36px; text-align: right;}
 
 /* Header */
 header{
 	height: 80vh;
 	padding: 8em 0 0 4em !important;
-	
 	font-family: impact;
 	letter-spacing: 0.4em;
 }
-
-header h3{
-	font-size: 4em;
-}
-
-header h4{
-	font-size: 2em;
-	margin-top: 1em;
-}
+header h3{font-size: 4em;}
+header h4{font-size: 2em; margin-top: 1em;}
 
 /* About */
 #about{
@@ -85,37 +58,23 @@ header h4{
 	padding-top: 1em;
 	color: #fff;
 }
-
 #about p{padding-top: 1em;}
-
 #about .portfolio-images{padding-top: 2em;}
-
 #about .portfolio-images .col{padding: 5px;}
 
 /* Contact */
 #contact{height: 100vh; padding: 3em 1em;}
-
-#contact form{}
-
-#contact form .select-group{
-	margin-bottom: 0.7em;
-}
-
+#contact form .select-group{margin-bottom: 0.7em;}
 #contact form input[type="text"], #contact form input[type="email"]{width: 100%;}
-
 #contact form input[type="file"]{float: left; cursor: pointer;}
-
 #contact form input[type="submit"]{float: right; cursor: pointer;}
 
 /* Footer */
 footer{height: 200px; background-color: #111; color: #fff; text-align: center; padding-top: 1em;}
-
 footer #social{font-size: 32px;}
-
 footer #social i.fa{margin: 0 5px 0 5px;}
 
 /* Media Queries */
-
 @media screen and (max-width: 320px) { /* Very Small! */
 	#contact{height: auto;}
 	#contact form input[type="submit"]{float: none;}
