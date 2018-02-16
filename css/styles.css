@@ -53,8 +53,8 @@ header h4{font-size: 2em; margin-top: 1em;}
 /* About */
 #about{
 	display: flex;
-	height: 100vh;
-	background-color: teal;
+	height:  100vh;
+	background-color: skyblue;
 	padding-top: 1em;
 	color: #fff;
 }
@@ -64,6 +64,7 @@ header h4{font-size: 2em; margin-top: 1em;}
 
 /* Contact */
 #contact{height: 100vh; padding: 3em 1em;}
+#contact form p{margin-bottom: 0;}
 #contact form .select-group{margin-bottom: 0.7em;}
 #contact form input[type="text"], #contact form input[type="email"]{width: 100%;}
 #contact form input[type="file"]{float: left; cursor: pointer;}
