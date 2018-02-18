@@ -43,15 +43,15 @@ a:hover{text-decoration: none;}
 .sidenav #navTextWrapper{display: none;}
 .sidenav a, .sidenav .brand{
     padding: 8px 8px 8px 20px;
-    text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
 }
+.sidenav .navBrandExit{border-bottom: 2px solid #fff;}
 .sidenav a:hover {color: #f1f1f1;}
-.sidenav .brand{font-size: 1.4em;}
+.sidenav .brand{font-size: 1.4em; text-decoration: none;}
 .sidenav .closeBtn, .sidenav .brand{display: inline-block;}
-.sidenav .closeBtn {font-size: 36px; text-align: right;}
+.sidenav .closeBtn {font-size: 36px; text-align: right; text-decoration: none;}
 
 /* Header */
 #showcase{
