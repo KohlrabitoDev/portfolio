@@ -3,6 +3,11 @@ $(function () {
 	$('[data-toggle="tooltip"]').tooltip();
 });
 
+// Make tooltips not scroll to top.
+$('.tool-tip').click( function(e) {
+	e.preventDefault();
+});
+
 // For sideNav, https://www.w3schools.com/howto/howto_js_sidenav.asp
 const openNav = () =>{
 	if ($(window).width() > 2000){
