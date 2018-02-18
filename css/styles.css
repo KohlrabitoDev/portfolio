@@ -102,17 +102,18 @@ a:hover{text-decoration: none;}
 /* Portfolio */
 #portfolio{text-align: center;}
 #portfolio img.project{width: 100%;}
-#portfolio .row{padding: 0 3.5em;}
+#portfolio .row{padding: 0 6em;}
+#portfolio .row .col-md-4{margin-bottom: 1em;}
 /* 
 * ImageBox credit:
 * https://codepen.io/luisintosh/pen/gPGXOp
 */
 .imagebox {
 	background-color: #000;
-  padding: 0px;
-  position: relative;
-  text-align: center;
-  width: 100%;
+	padding: 0;
+	position: relative;
+	text-align: center;
+	width: 100%;
 }
 .imagebox img {
   opacity: 1;
@@ -158,7 +159,7 @@ footer i.fa{color: #fff !important; font-size: 2em; margin: 0 0.2em; cursor: poi
 }
 
 @media screen and (max-width: 1024px) {/* Laptop */
-	#showcase{padding: 0 8em;}
+
 }
 
 @media screen and (max-width: 768px) {/* Tablet */
@@ -166,6 +167,8 @@ footer i.fa{color: #fff !important; font-size: 2em; margin: 0 0.2em; cursor: poi
 	#showcase h1{font-size: 1.5em;}
 	
 	#perks{height: auto;}
+	
+	#portfolio .row{padding: 0;}
 	
 	#contact{height: auto;}
 }
