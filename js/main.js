@@ -22,5 +22,3 @@ const closeNav = () =>{
 	document.getElementById("mySideNav").style.width = "0";
 	document.getElementById("navTextWrapper").style.display = "none";
 }
-
-// Calculate Contact Form Price
