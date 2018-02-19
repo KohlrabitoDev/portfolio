@@ -1,58 +1,32 @@
-/* Globals */
-body{overflow-x: hidden;}
+/* Fixes */
+@media (min-width: 768px){.navbar-default {border-radius: 0;}}
+i.fa{color: #574D39 !important;}
 
-.btn-success{background-color: lime; border-color: lime;}
-
-a:link{text-decoration: none;}
-
-#pageNav{
-	display: flex;
-	align-items: center;
-	justify-content: center;
+/* Global */
+body{
+	font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+	overflow-x: hidden;
 }
 
-#topButton, #nextButton,#infoCircle{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	position: fixed;
-	width: 50px;
-	height: 50px;
-	border-radius: 100%;
-	bottom: 0;
-	
-	background-color: lime;
-	color: #fff;
-	text-align: center;
-	font-size: 1.5em;
-}
-
-#topButton{
-	right: 0;
-	margin: 0 20px 20px 0;
-}
-
-#nextButton{
-	transform: rotate(180deg);
-	margin: 0 0 20px 0;
-}
-
-#infoCircle{
-	margin: 0 0 20px 20px;
-	left: 0;
-}
-
-#topButton:link{text-decoration: none;}
-
-#infoCircle:link{text-decoration: none; color: #fff;}
+h2.sectionHeading{color: #333; text-align: center;}
+button, .btn{color: #fff !important; background-color: #574D39; cursor: pointer;}
+button:focus, .btn:focus{outline: 0 !important;}
+button:hover, .btn:hover{color: #fff !important; background-color: #443d2d;}
+#perks a{color: #337AB7; font-weight: bold;} /* Add all links */
+a:hover{text-decoration: none;}
 
 /* Styles for sidenav */
 .openMenu{
 	position: fixed;
+	right: 0;
 	font-size: 40px;
-	margin-left: 0.4em;
+	margin-right: 0.4em;
 	cursor: pointer;
-	color: #fff;
+	color: #777;
+	z-index: 1;
 }
 .sidenav {
     height: 100%;
@@ -60,131 +34,163 @@ a:link{text-decoration: none;}
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: #111;
     overflow-x: hidden;
-    /*transition: 0.5s;*/
+    transition: 0.2s;
     padding-top: 30px;
 }
-
-.sidenav #navTextWrapper{
-	display: none;
-}
-
+.sidenav #navTextWrapper{display: none;}
 .sidenav a, .sidenav .brand{
     padding: 8px 8px 8px 20px;
-    text-decoration: none;
     font-size: 25px;
     color: #818181;
     display: block;
-    /*transition: 0.3s;*/
 }
-
-.sidenav a:hover {
-    color: #f1f1f1;
-}
-
-.sidenav .brand{
-	font-size: 1.4em;
-}
-
-.sidenav .closeBtn, .sidenav .brand{
-	display: inline-block;
-}
-
-.sidenav .closeBtn {
-    font-size: 36px;
-	text-align: right;
-}
+.sidenav .navBrandExit{border-bottom: 2px solid #fff;}
+.sidenav a:hover {color: #f1f1f1;}
+.sidenav .brand{font-size: 1.4em; text-decoration: none;}
+.sidenav .closeBtn, .sidenav .brand{display: inline-block;}
+.sidenav .closeBtn {font-size: 36px; text-align: right; text-decoration: none;}
 
 /* Header */
-header:before{
-	content: "";
-	position: fixed;
-	left: 0;
-	right: 0;
-	z-index: -1;
-  
-	display: block;
-	background-image: url('../img/headerBg.blurred.min.jpeg');
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
+#showcase{
 	width: 100%;
 	height: 100vh;
-}
-
-header{
-	height: 100vh;
+	padding: 0 24em;
+	background: url("../img/showcase2.jpg");
+	background-size: cover;
+	background-position: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	text-align: center;
 }
 
-header h3{
-	background-color: rgba(255, 255, 255, 0.2);
-	padding: 1.2em;
+#showcase .typing-container{
+	background-color: #fff;
+	border-radius: 100px;
+	overflow-x: hidden;
+	margin-bottom: 0;
 }
 
-/* About */
-#about{
-	display: flex;
-	height: 100vh;
+#showcase h1{
+	color: #493D26;
+	font-size: 1.7em;
+	font-weight: bold;
+	padding: 8px;
+	margin-bottom: 0;
+}
+
+#showcase .btn{margin-top: 0.5em;}
+
+#showcase .bg-credit{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#showcase .bg-credit a{background-color: #574D39;}
+#showcase .bg-credit a:hover{background-color: #443d2d;}
+
+/* Perks */
+#perks{text-align: center; height: 100vh; width: 100%;}
+#perks .col-md-4{margin-bottom: 20px; padding: 20px;}
+#perks .col-md-4 img{height: 50px; width: 50px;}
+#perks .col-md-4 p{font-size: 16px;}
+
+/* Portfolio */
+#portfolio{text-align: center;}
+#portfolio img.project{width: 100%;}
+#portfolio .row{padding: 0 6em;}
+#portfolio .row .col-md-4{margin-bottom: 1em;}
+/* 
+* ImageBox credit:
+* https://codepen.io/luisintosh/pen/gPGXOp
+*/
+.imagebox {
 	background-color: #000;
-	padding: 0.7em 1em 0.7em 1em;
-	color: #fff;
+	padding: 0;
+	position: relative;
+	text-align: center;
+	width: 100%;
 }
-
-#about p{padding-top: 1em;}
-
-#about p span.extra-content{}
-
-#about p span.read-more{}
-
-#about .col{padding: 5px;}
+.imagebox img {
+  opacity: 1;
+  transition: 0.5s opacity;
+}
+.imagebox .imagebox-desc {
+  background-color: rgba(0, 0, 0, 0.6);
+  bottom: 0px;
+  color: white;
+  font-size: 1.2em;
+  left: 0;
+  padding: 10px 15px;
+  position: absolute;
+  transition: 0.5s padding;
+  text-align: center;
+  width: 100%;
+  opacity: 0;
+}
+.imagebox:hover img {opacity: 0.7;}
+.imagebox:hover .imagebox-desc {padding-bottom: 10%; opacity: 1;}
+#portfolio .btn{margin-top: 0.4em;}
 
 /* Contact */
 #contact{height: 100vh; padding: 3em 1em;}
-
-#contact form{}
-
-#contact form .select-group{
-	margin-bottom: 0.7em;
-}
-
-#contact form select[name="looking"]{float: right;}
-
+#contact form p{margin-bottom: 0;}
+#contact form .select-group{margin-bottom: 0.7em;}
 #contact form input[type="text"], #contact form input[type="email"]{width: 100%;}
-
-#contact form .checkbox-kt{float: right;}
+#contact form input[type="file"]{float: left; cursor: pointer;}
+#contact form input[type="submit"]{float: right; cursor: pointer;}
 
 /* Footer */
-footer{height: 200px; background-color: #111; color: #fff; text-align: center; padding-top: 1em;}
+footer{
+	color: #fff;
+	background-color: #574D39;
+	padding: 20px;
+	text-align: center;
+}
+footer i.fa{color: #fff !important; font-size: 2em; margin: 0 0.2em; cursor: pointer;}
 
-footer p{}
+/* Media */
+@media screen and (max-width: 1220px) {/* Breaking Point */ 
+	#showcase{padding: 0 8em;}
+}
 
-footer #social{font-size: 32px;}
+@media screen and (max-width: 1024px) {/* Laptop */
 
-footer #social i.fa{margin: 0 5px 0 5px;}
+}
 
-/* Media Queries */
-@media screen and (max-height: 450px) { /* Smaller Height displays */
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+@media screen and (max-width: 768px) {/* Tablet */
+	#showcase{padding: 0 4em;}
+	#showcase h1{font-size: 1.5em;}
+	
+	#perks{height: auto;}
+	
+	#portfolio .row{padding: 0;}
+	
+	#contact{height: auto;}
+}
+
+@media screen and (max-width: 540px) { /* Breaking Point */
+	#showcase h1{font-size: 1.2em;}
 }
 
 @media screen and (max-width: 450px) { /* Mobile */
-	header h3{font-size: 1.3em;}
-	#about{padding: 0.7em 0 0.7em 0;}
-	#about p span.extra-content{display: none;}
+	#showcase{padding: 0;}
+	#showcase .bg-credit, #showcase .bg-credit a{width: 100%;}
 	
+	#perks{height: auto;}
+	#perks .col-md-4{width: 100%; margin-bottom: 0;}
+	
+	#contact{padding-bottom: 0;}
 	#contact form select{width: 100%;}
-	#contact form select[name="iama"]{margin-bottom: 0.5em;}
-	#contact form select[name="looking"]{float: none;}
-	#contact form .checkbox-kt{float: none;}
-	#contact form input[type="submit"]{width: 100%; margin-top: 1em;}
+	#contact form input[type="submit"]{width: 100%; margin-top: 0.5em; float: none;}
 }
 
-@media screen and (min-width: 2000px) { /* 4K TV */
-	body{}
+@media screen and (max-width: 320px) { /* Very Small! */
+	#showcase h1{font-size: 1em;}
+	
+	footer p{font-size: 0.7em;}
 }

@@ -1,0 +1,33 @@
+/*
+*
+*	All Credit To:  CodingFlag https://youtu.be/6vOJoAmbza0
+*
+*/
+
+h1.typing{
+	animation: type 3s steps(30); /* Set time and steps */
+	overflow: hidden; /* Stop disappearing */
+	white-space: nowrap; /* Stop word-wrapping */
+	/*width: 29ch; Check "Other Notes" */
+}
+
+@keyframes type{
+	0%{
+		width: 0ch;
+	}
+	100%{
+		width: 29ch; /* Check "Other Notes" */
+	}
+}
+
+/*
+*
+*	Other Notes:
+*	- This can be used for anything multiple times, just 
+*	replace the h1 and apply the same rules.
+*	- To make multiple, call the keyframes something else,
+*	basically, just replace "type" after "@keyframes" and
+*	"type" after "animation:" with something else.
+*	- MUST DEFINE WIDTH IN ch IN BOTH ELEMENT AND KEYFRAME!
+*
+*/
