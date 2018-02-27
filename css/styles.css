@@ -169,6 +169,7 @@ footer i.fa{color: #fff !important; font-size: 2em; margin: 0 0.2em; cursor: poi
 	#perks{height: auto;}
 	
 	#portfolio .row{padding: 0;}
+	.imagebox .imagebox-desc {opacity: 1;}
 	
 	#contact{height: auto;}
 }
