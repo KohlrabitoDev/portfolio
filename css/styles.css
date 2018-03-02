@@ -59,7 +59,7 @@ a:hover{text-decoration: none;}
 	width: 100%;
 	height: 100vh;
 	padding: 0 24em;
-	background: url("../img/showcase2.jpg");
+	background: url("../img/showcase2.min.jpg");
 	background-size: cover;
 	background-position: center;
 	display: flex;
