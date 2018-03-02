@@ -4,7 +4,8 @@ i.fa{color: #574D39 !important;}
 
 /* Global */
 body{
-	font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+	--font-stack: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+	font-family: var(--font-stack);
 	padding: 0;
 	margin: 0;
 	background-color: #f4f4f4;
