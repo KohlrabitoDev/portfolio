@@ -150,19 +150,19 @@
 		<section id="contact">
 			<div class="container-fluid">
 			<h4 class="text-center">Here, let me simplify that email for ya.</h4>
-			<!--<h5 class="text-center text-muted">I am currently <span class="text-success">available</span> for projects, <span class="text-danger">not</span> for hire.</h5>-->
 				<form id="contactForm" accept-charset="UTF-8" action="https://usebasin.com/f/13de6ec5f15b" method="POST">
 					<div class="form-group">
 						<p>I am a</p>
-						<select id="iama" name="iama" class="form-control"><option value="Corporation">Corporation</option><option value="Business">Business</option><option value="Individual">Individual</option></select>
+						<select id="iama" name="iama" class="form-control" onchange="updatePrice(this)"><option value="" data-price="0" disabled selected>Select One</option><option value="Corporation" data-price="500">Corporation</option><option value="Business" data-price="100">Business</option><option value="Individual" data-price="10">Individual</option></select>
+						<p>Estimated Price: $<span id="price"></span></p>
 						
-						<p>Looking for a</p><select id="looking" name="looking" class="form-control"><option value="Full-Time">Full-Time Employee</option><option value="Part-Time">Part-Time Employee</option><option value="Quickie">Quick Website</option></select>
+						<p>Looking for a</p><select id="looking" name="looking" class="form-control"><option value="" disabled selected>Select One</option><option value="Full-Time">Full-Time Employee</option><option value="Part-Time">Part-Time Employee</option><option value="Quickie">Quick Website</option></select>
 						
 						<p>My name is </p><input type="text" id="Name" name="name" class="form-control" placeholder="Enter full name">
 						
 						<p>My email is</p><input type="email" id="Email" name="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
 						
-						<p>and here's a breif description of my project</p><textarea id="Desc" name="Desc" class="form-control" placeholder="Breif description of project... (E.g Hi my name is John Doe and I work for My Company Inc., I would like to hire you.)"></textarea>
+						<p>and here's a brief description of my project</p><textarea id="Desc" name="Desc" class="form-control" placeholder="Brief description of project... (E.g Hi my name is John Doe and I work for My Company Inc., I would like to hire you.)"></textarea>
 					</div>
 					
 					<div class="form-group">
