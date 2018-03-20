@@ -24,7 +24,7 @@ const closeNav = () =>{
 }
 
 // Price Calc
-  let price = 0;
+/*  let price = 0;
   let stored = {};
 
   const updatePrice = elm => {
@@ -42,4 +42,4 @@ const closeNav = () =>{
 
     console.log(`Price: ${price}`);
 	document.getElementById("price").innerHTML = price;
-  };
+  };*/
