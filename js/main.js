@@ -23,23 +23,7 @@ const closeNav = () =>{
 	document.getElementById("navTextWrapper").style.display = "none";
 }
 
-// Price Calc
-/*  let price = 0;
-  let stored = {};
-
-  const updatePrice = elm => {
-    const id = elm.id;
-    const selectedPrice = parseInt(
-      Array.from(
-        elm.children
-      ).filter(x => x.selected)[0].dataset.price
-    );
-
-    price = 0;
-    stored[id] = selectedPrice;
-
-    Object.keys(stored).forEach(key => price += stored[key]);
-
-    console.log(`Price: ${price}`);
-	document.getElementById("price").innerHTML = price;
-  };*/
+// Close Cookie Banner
+const closeCookieBanner = () =>{
+	document.getElementById("cookieBanner").style.display = "none";
+}

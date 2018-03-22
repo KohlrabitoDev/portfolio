@@ -183,6 +183,22 @@ footer{
 }
 footer i.fa{color: #fff !important; font-size: 2em; margin: 0 0.2em; cursor: pointer;}
 
+/* Cookie Banner */
+#cookieBanner{
+	text-align: center;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	color: #fff;
+	background-color: #443D2D;
+	padding: 1em;
+	font-size: 0.8em;
+}
+
+#cookieBanner p{margin: 0;}
+
+#cookieBanner p a:last-of-type{font-size: 1.1em; margin-left: 1em;}
+
 /* Media */
 @media screen and (max-width: 1220px) {/* Breaking Point */ 
 	header{padding: 0 8em;}
