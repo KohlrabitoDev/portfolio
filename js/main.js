@@ -10,6 +10,7 @@ $('.tool-tip').click( function(e) {
 
 // For sideNav, https://www.w3schools.com/howto/howto_js_sidenav.asp
 let navIsOpen = false;
+console.log(`Nav is Open: ${navIsOpen}`);
 
 const openNav = () =>{
 	if ($(window).width() > 2000){
@@ -19,6 +20,7 @@ const openNav = () =>{
 	}
 	document.getElementById("navTextWrapper").style.display = "block";
 	navIsOpen = true;
+	console.log(`Nav is Open: ${navIsOpen}`);
 }
 
 const closeNav = () =>{
@@ -26,6 +28,7 @@ const closeNav = () =>{
 		document.getElementById("mySideNav").style.width = "0";
 		document.getElementById("navTextWrapper").style.display = "none";
 		navIsOpen = false;
+		console.log(`Nav is Open: ${navIsOpen}`);
 	}
 }
 
