@@ -32,8 +32,7 @@ const closeNav = () =>{
 	}
 }
 
-// Hide sidenav if user clicks anywhere but in the container
-document.getElementById("mySideNav").addEventListener("click", closeNav());
+
 
 // Close Cookie Banner
 const closeCookieBanner = () =>{

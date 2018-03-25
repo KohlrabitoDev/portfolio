@@ -2,14 +2,15 @@
 @media (min-width: 768px){.navbar-default {border-radius: 0;}}
 
 /* Font Faces */
-@font-face{
-	font-family: channel;
-	src: url(../font/Channel.ttf);
-}
+@font-face{font-family: channel; src: url(../font/Channel.ttf);}
+@font-face{font-family: Quesha; src: url(../font/Quesha.ttf);}
 
 /* Global */
 body{
 	--font-stack: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+	--main-color-scheme: #783525;
+	--mcs-light: #843a29;
+	--mcs-dark: #632b1d;
 	font-family: var(--font-stack);
 	padding: 0;
 	margin: 0;
@@ -20,15 +21,16 @@ body{
 section{padding-top: 0.5em;}
 
 h2.sectionHeading{
-	font-family: channel;
-	font-size: 1.4em;
+	font-family: Quesha;
+	font-size: 3em;
+	font-weight: bold;
 	text-align: center;
 	margin-top: 1em;
 	color: #333;
 }
-button, .btn{color: #fff !important; background-color: #574D39; cursor: pointer;}
+button, .btn{color: #fff !important; background-color: var(--main-color-scheme); cursor: pointer;}
 button:focus, .btn:focus{outline: 0 !important;}
-button:hover, .btn:hover{color: #fff !important; background-color: #443d2d;}
+button:hover, .btn:hover{color: #fff !important; background-color: var(--mcs-dark);}
 #perks a{color: #337AB7; font-weight: bold;} /* Add all links */
 a:hover{text-decoration: none;}
 
@@ -67,7 +69,7 @@ a:hover{text-decoration: none;}
 .sidenav .closeBtn, .sidenav .brand{display: inline-block;}
 .sidenav .closeBtn {font-size: 36px; text-align: right; text-decoration: none;}
 
-/* Loading Splash */
+/* Loading Splash 
 #loadingSplash{
 	height: 100vh;
 	width: 100%;
@@ -78,7 +80,7 @@ a:hover{text-decoration: none;}
 	background-color: #fff;
 	z-index: 200;
 	text-align: center;
-}
+}*/
 
 /* Header */
 header{
@@ -118,7 +120,7 @@ header .bg-credit{
 	right: 0;
 }
 
-header .bg-credit a{background-color: #574D39;}
+header .bg-credit a{background-color: var(--main-color-scheme);}
 header .bg-credit a:hover{background-color: #443d2d;}
 
 /* About */
@@ -142,7 +144,7 @@ header .bg-credit a:hover{background-color: #443d2d;}
 #perks .col-md-4{margin-bottom: 20px; padding: 20px;}
 #perks .col-md-4 img{height: 50px; width: 50px;}
 #perks .col-md-4 p{font-size: 16px;}
-#perks .col-md-4 i.fa{color: #574D39 !important;}
+#perks .col-md-4 i.fa{color: var(--main-color-scheme) !important;}
 
 /* Portfolio */
 #portfolio{height: 100vh; text-align: center;}
@@ -192,7 +194,7 @@ header .bg-credit a:hover{background-color: #443d2d;}
 /* Footer */
 footer{
 	color: #fff;
-	background-color: #574D39;
+	background-color: var(--main-color-scheme);
 	padding: 20px;
 	text-align: center;
 }
@@ -205,7 +207,7 @@ footer i.fa{color: #fff !important; font-size: 2em; margin: 0 0.2em; cursor: poi
 	position: fixed;
 	bottom: 0;
 	color: #fff;
-	background-color: #443D2D;
+	background-color: var(--mcs-light);
 	padding: 1em;
 	font-size: 0.8em;
 }
