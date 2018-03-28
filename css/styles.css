@@ -18,8 +18,6 @@ body{
 	overflow-x: hidden;
 }
 
-section{padding-top: 0.5em;}
-
 h2.sectionHeading{
 	font-family: Quesha;
 	font-size: 3em;
@@ -136,7 +134,7 @@ header .bg-credit a:hover{background-color: #443d2d;}
 #about br{clear: both;}
 
 /* The Process */
-#process{height: 100vh;}
+#process{}
 #process p.timelineCredit{margin: 0;}
 
 /* Perks */
@@ -217,9 +215,6 @@ footer i.fa{color: #fff !important; font-size: 2em; margin: 0 0.2em; cursor: poi
 #cookieBanner p a:last-of-type{font-size: 1.1em; margin-left: 1em;}
 
 /* Media */
-@media screen and (min-width: 1440px) {
-	body{zoom: 110%;}
-}
 
 @media screen and (max-width: 1220px) {/* Breaking Point */ 
 	header{padding: 0 8em;}
@@ -298,6 +293,6 @@ footer i.fa{color: #fff !important; font-size: 2em; margin: 0 0.2em; cursor: poi
 	#cookieBanner{padding: 0.4em; font-size: 0.6em;}
 }
 
-@media screen and (max-height: 760px){ /* Smaller Height Displays */
+@media screen and (max-height: 640px){ /* Smaller Height Displays */
 	#about, #process, #perks, #portfolio, #contact{height: auto;}
 }
