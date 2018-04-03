@@ -42,6 +42,7 @@ const closeCookieBanner = () =>{
 // Set cookie for cookie banner close
 if (Cookies.get('name') == "cookieBannerIsClosed"){
 	closeCookieBanner();
+	console.log("Yummy! The cookie banner's, 'cookieBannerIsClosed', cookie was eaten!");
 }else{
 	console.log("'cookieBannerIsClosed' cookie is not set yet, here are all cookies: ");
 	console.log(Cookies.get());
