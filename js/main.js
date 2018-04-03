@@ -32,9 +32,17 @@ const closeNav = () =>{
 	}
 }
 
-
-
 // Close Cookie Banner
+let cookieBannerIsClosed = false;
 const closeCookieBanner = () =>{
 	document.getElementById("cookieBanner").style.display = "none";
+	cookieBannerIsClosed = true;
+}
+
+// Set cookie for cookie banner close
+if (Cookies.get('name') == "cookieBannerIsClosed"){
+	closeCookieBanner();
+}else{
+	console.log("'cookieBannerIsClosed' cookie is not set yet, here are all cookies: ");
+	console.log(Cookies.get());
 }

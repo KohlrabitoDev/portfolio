@@ -309,7 +309,7 @@
 		</footer>
 		
 		<div id="cookieBanner">
-			<p>Yup, even my website uses cookies, <a href="http://www.whatarecookies.com/" target="_blank">learn more here.</a> <a href="#" onclick="event.preventDefault(); closeCookieBanner();"><i class="fa fa-times sr-icons"></i></a></p>
+			<p>Yup, even my website uses cookies, <a href="http://www.whatarecookies.com/" target="_blank">learn more here.</a> <a href="#" id="closeCookieBannerEle" onclick="event.preventDefault(); closeCookieBanner(); Cookies.set('name', 'cookieBannerIsClosed', {expires: 7, path: ''});"><i class="fa fa-times sr-icons"></i></a></p>
 		</div>
 
 		<!-- Begin Scripts -->
@@ -325,6 +325,7 @@
 		<!-- Custom Scripts -->
 		<script src="js/smoothScroll.js"></script>
 		<script src="https://usebasin.com/f/13de6ec5f15b/ahoy.js" async defer></script> <!-- For Basin Tracking -->
+		<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
 		<script src="js/main.js" async></script>
 	</body>
 </html>
