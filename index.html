@@ -19,22 +19,57 @@
 
 	</head>
 	<body>
+	
+		<!-- Night Mode Filter -->
+		<div id="nightMode"></div>
 		
 		<!-- Navigation Menu -->
 		<span class="openMenu" onclick="openNav();">&#9776;</span>
 		<nav id="mySideNav" class="sidenav">
 			<div id="navTextWrapper">
 				<div class="navBrandExit">
-					<a href="#" class="brand">Kenneth Rhodes</a><a href="#" class="closeBtn" onclick="event.preventDefault(); closeNav();">&times;</a>
+					<a href="#" class="closeBtn" onclick="event.preventDefault(); closeNav();">&times;</a>
+					<a href="#" class="brand">Kenneth Rhodes</a>
 				</div>
 				
-				<a href="#showcase">Top</a>
-				<a href="https://blog.insanewolfhd.com/">Blog</a>
-				<a href="#about">About Me</a>
-				<a href="#process">The Process</a>
-				<a href="#perks">Skills</a>
-				<a href="#portfolio">Portfolio</a>
-				<a href="#contact">Contact</a>
+				<div id="navLinks">
+					<a href="#showcase">Top</a>
+					<a href="https://blog.insanewolfhd.com/">Blog</a>
+					<a href="#about">About Me</a>
+					<a href="#process">The Process</a>
+					<a href="#perks">Skills</a>
+					<a href="#portfolio">Portfolio</a>
+					<a href="#contact">Contact</a>
+				</div>
+			</div>
+			
+			<div id="navActions" class="row">
+				<div class="col">
+					<a href="#" class="actionLink" onclick="nightMode();">
+						<div class="action">
+							<i class="fa fa-circle sr-icons"></i>
+							<span>Night Mode</span>
+						</div>
+					</a>
+				</div>
+				
+				<div class="col">
+					<a href="#" class="actionLink">
+						<div class="action">
+							<i class="fa fa-circle sr-icons"></i>
+							<span>Left Handed</span>
+						</div>
+					</a>
+				</div>
+				
+				<div class="col">
+					<a href="#" class="actionLink">
+						<div class="action">
+							<i class="fa fa-circle sr-icons"></i>
+							<span>Cookies</span>
+						</div>
+					</a>
+				</div>
 			</div>
 		</nav>
 		
