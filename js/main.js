@@ -28,6 +28,11 @@ const closeNav = () =>{
 	}
 }
 
+// Close navbar when clicking a navlink
+$(".navLink").click(function(){
+	closeNav();
+});
+
 // Actions
 // Turn on indicator in navbar
 let actionIsOn = false;
