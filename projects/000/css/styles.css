@@ -10,6 +10,17 @@ body{
 	overflow-x: hidden;
 }
 
+.backBtn{
+	position: fixed;
+	left: 0;
+	font-size: 2em;
+	font-weight: bold;
+	margin-left: 0.4em;
+	cursor: pointer;
+	z-index: 5;
+}
+.backBtn:hover{text-decoration: none;}
+
 .container-fluid p{
 	display: block;
 	text-align: justify;
