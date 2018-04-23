@@ -1,0 +1,36 @@
+body{
+	--font-stack: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+	--main-color-scheme: #783525;
+	--mcs-light: #843a29;
+	--mcs-dark: #632b1d;
+	font-family: var(--font-stack);
+	padding: 0;
+	margin: 0;
+	background-color: #f4f4f4;
+	overflow-x: hidden;
+}
+
+.container-fluid p{
+	display: block;
+	text-align: justify;
+	text-indent: 1.5em;
+}
+
+.blockquote{opacity: 0.8;}
+.checked{color: orange;}
+
+/* Footer */
+footer{
+	display: block;
+	bottom: 0;
+	width: 100%;
+	color: #fff;
+	background-color: var(--main-color-scheme);
+	padding: 20px;
+	text-align: center;
+}
+footer i.fa{color: #fff !important; font-size: 2em; margin: 0 0.2em; cursor: pointer;}
+
+@media screen and (min-width: 724px) {
+	footer{position: absolute;}
+}
