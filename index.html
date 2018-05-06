@@ -313,26 +313,74 @@
 			<h4 class="text-center">Here, let me simplify that email for ya.</h4>
 				<form id="contactForm" accept-charset="UTF-8" action="https://usebasin.com/f/13de6ec5f15b" method="POST">
 					<div class="form-group">
-						<p>I am a</p>
-						<select id="iama" name="iama" class="form-control" required><option value="" data-price="0" disabled selected>Select One</option><option value="Corporation">Corporation</option><option value="Business">Business</option><option value="Individual">Individual</option></select>
+						<div class="row">
+							<div class="col">
+								<select id="iama" name="iama" class="form-control" required><option value="" data-price="0" disabled selected>I am a</option><option value="Corporation">Corporation</option><option value="Business">Business</option><option value="Individual">Individual</option></select>
+							</div>
+							<div class="col">
+								<select id="looking" name="looking" class="form-control" required><option value="" disabled selected>Looking for a</option><option value="Full-Time">Full-Time Employee</option><option value="Part-Time">Part-Time Employee</option><option value="Quickie">Quick Website</option></select>
+							</div>
+						</div>
 						
-						<p>Looking for a</p>
-						<select id="looking" name="looking" class="form-control" required><option value="" disabled selected>Select One</option><option value="Full-Time">Full-Time Employee</option><option value="Part-Time">Part-Time Employee</option><option value="Quickie">Quick Website</option></select>
+						<div class="row">
+							<div class="col">
+								<select id="visitorsAmt" name="visitorsAmt" class="form-control" onchange="updatePrice();" required>
+									<option disabled selected>Expected Monthly Visitors</option>
+									<option value="OneToFifty">1 - 50</option>
+									<option value="FiftyoneToTwoHundred">51 - 200</option>
+									<option value="OverThreeHundred">300+</option>
+								</select>
+							</div>
+							<div class="col">
+								<input type="number" id="numOfPages" name="numOfPages" class="form-control" max="12" placeholder="Pages" onchange="updatePrice();" required>
+							</div>
+							<div class="col">
+								<select id="finish" name="finish" class="form-control" onchange="updatePrice();" required>
+									<option disabled selected>Finish it in...</option>
+									<option value="30Plus">30+ Days</option>
+									<option value="14Days">14 Days</option>
+									<option value="7Days">7 Days</option>
+								</select>
+							</div>
+						</div>
 						
-						<p>My name is </p>
-						<input type="text" id="Name" name="name" class="form-control" placeholder="Enter full name" required>
+						<div class="row">
+							<div class="col">
+								<input type="text" id="Name" name="name" class="form-control" placeholder="Enter full name" required>
+							</div>
+							<div class="col">
+								<input type="email" id="Email" name="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" required>
+							</div>
+						</div>
 						
-						<p>My email is</p>
-						<input type="email" id="Email" name="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" required>
-						
-						<p>and here's a brief description of my project</p>
 						<textarea id="Desc" name="Desc" class="form-control" placeholder="Brief description of project... (E.g Hi my name is John Doe and I work for My Company Inc., I would like to hire you.)" required></textarea>
-					
-						<label style="margin-right: 1em;"><input type="checkbox" name="allowToUsePortfolio" id="allowToUsePortfolio" required>&nbsp;I agree to the <a href="terms.html">terms of agreement.</a></label>
-					</div>
-					
-					<div class="form-group">
-						<input type="submit" class="btn"></input>
+						
+						<div class="row text-center">
+							<div class="col">
+								<label><input type="checkbox" name="useOwnDomain"id="useOwnDomain" onchange="updatePrice();" class="form-control">
+								I would like to use my own domain provider.</label>
+							</div>
+							
+							<div class="col">
+								<label><input type="checkbox" name="useOwnHosting" id="useOwnHosting" onchange="updatePrice();" class="form-control">
+								I would like to use my own web hosting.</label>
+							</div>
+							
+							<div class="col">
+								<label><input type="checkbox" name="monthlyMaintenance" id="monthlyMaintenance" onchange="updatePrice();" class="form-control">I will require monthly maintenance</label>
+							</div>
+						</div>
+						
+						<div class="row text-center">
+							<div class="col">
+								<p>Estimate: <span>$<span id="yearly"></span>/yr</span> <span>$<span id="monthly"></span>/mo</span> <span>$<span id="oneTime"></span>/One Time</span> <span>$<span id="total"></span>/Total</span></p>
+							</div>
+							<div class="col">
+								<label><input type="checkbox" name="agreeToTerms" id="agreeToTerms" required>&nbsp;I agree to the <a href="terms.html">terms of use.</a></label>
+							</div>
+						</div>
+						
+						<input type="submit" class="btn">
 					</div>
 				</form>
 			</div>
