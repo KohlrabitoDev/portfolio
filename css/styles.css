@@ -223,6 +223,7 @@ header .bg-credit a:hover{background-color: #443d2d;}
 /* Contact */
 #contact{height: 100vh; padding: 3em 1em;}
 #contact form *{margin-top: 0.4em;}
+#contact form .priceElements{display: none;}
 #contact form input[type="text"], #contact form input[type="email"]{width: 100%;}
 #contact form textarea{margin-top: 1em;}
 #contact form input[type="submit"]{float: right; cursor: pointer;}

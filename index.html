@@ -318,11 +318,11 @@
 								<select id="iama" name="iama" class="form-control" required><option value="" data-price="0" disabled selected>I am a</option><option value="Corporation">Corporation</option><option value="Business">Business</option><option value="Individual">Individual</option></select>
 							</div>
 							<div class="col">
-								<select id="looking" name="looking" class="form-control" required><option value="" disabled selected>Looking for a</option><option value="Full-Time">Full-Time Employee</option><option value="Part-Time">Part-Time Employee</option><option value="Quickie">Quick Website</option></select>
+								<select id="looking" name="looking" class="form-control" onchange="checkForQuick();" required><option value="" disabled selected>Looking for a</option><option value="Full-Time">Full-Time Employee</option><option value="Part-Time">Part-Time Employee</option><option value="Quickie">Quick Website</option></select>
 							</div>
 						</div>
 						
-						<div class="row">
+						<div class="priceElements row">
 							<div class="col">
 								<select id="visitorsAmt" name="visitorsAmt" class="form-control" onchange="updatePrice();" required>
 									<option disabled selected>Expected Monthly Visitors</option>
@@ -346,7 +346,10 @@
 						
 						<div class="row">
 							<div class="col">
-								<input type="text" id="Name" name="name" class="form-control" placeholder="Enter full name" required>
+								<input type="text" id="fName" name="fname" class="form-control" placeholder="First Name" required>
+							</div>
+							<div class="col">
+								<input typw="text" id="lName" name="lname" class="form-control" placeholder="Last Name" required>
 							</div>
 							<div class="col">
 								<input type="email" id="Email" name="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" required>
@@ -355,7 +358,7 @@
 						
 						<textarea id="Desc" name="Desc" class="form-control" placeholder="Brief description of project... (E.g Hi my name is John Doe and I work for My Company Inc., I would like to hire you.)" required></textarea>
 						
-						<div class="row text-center">
+						<div class="priceElements row text-center">
 							<div class="col">
 								<label><input type="checkbox" name="useOwnDomain"id="useOwnDomain" onchange="updatePrice();" class="form-control">
 								I would like to use my own domain provider.</label>
@@ -372,7 +375,7 @@
 						</div>
 						
 						<div class="row text-center">
-							<div class="col">
+							<div class="priceElements col">
 								<p>Estimate: <span>$<span id="yearly"></span>/yr</span> <span>$<span id="monthly"></span>/mo</span> <span>$<span id="oneTime"></span>/One Time</span> <span>$<span id="total"></span>/Total</span></p>
 							</div>
 							<div class="col">

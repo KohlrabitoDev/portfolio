@@ -33,6 +33,18 @@ $(".navLink").click(function(){
 	closeNav();
 });
 
+// Toggle Price Elements
+let lookingEle = document.getElementById("looking");
+let priceElements = document.getElementsByClassName("priceElements");
+const checkForQuick = () =>{
+	let lookEqualsQuick = lookingEle.value;
+	if(lookEqualsQuick == "Quickie"){
+		$(".priceElements").css("display", "flex");
+	}else{
+		$(".priceElements").css("display", "none");
+	}
+}
+
 // Price Estimate
 let visitorsAmtEle = document.getElementById("visitorsAmt");
 let numOfPagesEle = document.getElementById("numOfPages");
