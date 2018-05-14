@@ -73,17 +73,17 @@ const updatePrice = () =>{
 	
 	// Switch to prices
 	if(visitorsAmt == "OneToFifty"){
-		yearly = 12;
-		monthly = 3.99;
-		oneTime = 5;
+		yearly = 12; // Google Domains
+		monthly = 3.99; // iFastNet
+		oneTime = 5; // Dev Fee
 	}else if(visitorsAmt == "FiftyoneToTwoHundred"){
-		yearly = 12;
-		monthly = 6.99;
-		oneTime = 10;
+		yearly = 12; // Google Domains
+		monthly = 6.99; // iFastNet
+		oneTime = 10; // Dev Fee
 	}else if(visitorsAmt == "OverThreeHundred"){
-		yearly = 12;
-		monthly = 9.99;
-		oneTime = 50;
+		yearly = 12; // Google Domains
+		monthly = 9.99; // iFastNet
+		oneTime = 50; // Dev Fee
 	}
 	
 	// Switch finish

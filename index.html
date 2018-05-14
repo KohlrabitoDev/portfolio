@@ -308,11 +308,11 @@
 		<section id="contact">
 			<div class="container-fluid">
 			<h4 class="text-center">Here, let me simplify that email for ya.</h4>
-				<form id="contactForm" accept-charset="UTF-8" action="https://usebasin.com/f/13de6ec5f15b" method="POST" onchange="checkForRequiredDone();">
+				<form id="contactForm" accept-charset="UTF-8" action="https://usebasin.com/f/13de6ec5f15b" method="POST">
 					<div class="form-group">
 						<div class="row">
 							<div class="col">
-								<select id="iama" name="iama" class="form-control" required><option value="" data-price="0" disabled selected>I am a</option><option value="Corporation">Corporation</option><option value="Business">Business</option><option value="Individual">Individual</option></select>
+								<select id="iama" name="iama" class="form-control" required><option value="" disabled selected>I am a</option><option value="Corporation">Corporation</option><option value="Business">Business</option><option value="Individual">Individual</option></select>
 							</div>
 							<div class="col">
 								<select id="looking" name="looking" class="form-control" onchange="checkForQuick();" required><option value="" disabled selected>Looking for a</option><option value="Full-Time">Full-Time Employee</option><option value="Part-Time">Part-Time Employee</option><option value="Quickie">Quick Website</option></select>
@@ -376,7 +376,7 @@
 								<p>Estimate: <span>$<span id="yearly"></span>/yr</span> <span>$<span id="monthly"></span>/mo</span> <span>$<span id="oneTime"></span>/One Time</span> <span>$<span id="total"></span>/Total</span></p>
 							</div>
 							<div class="col">
-								<label><input type="checkbox" name="agreeToTerms" id="agreeToTerms" required>&nbsp;I agree to the <a href="terms.html">terms of use.</a></label>
+								<label><input type="checkbox" name="agreeToTerms" id="agreeToTerms" required>&nbsp;I agree to the <a href="terms.html" target="_blank">terms of use.</a></label>
 							</div>
 							<div class="col">
 								<input type="Submit" class="btn">
