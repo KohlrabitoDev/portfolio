@@ -129,8 +129,6 @@ const updatePrice = () =>{
 	}
 }
 
-
-
 // Actions
 // Turn on indicator in navbar
 let actionIsOn = false;

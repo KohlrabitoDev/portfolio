@@ -21,9 +21,6 @@
 
 	</head>
 	<body>
-	
-		<!-- Night Mode Filter -->
-		<div id="nightMode"></div>
 		
 		<!-- Navigation Menu -->
 		<span class="openMenu" onclick="openNav();">&#9776;</span>
@@ -311,7 +308,7 @@
 		<section id="contact">
 			<div class="container-fluid">
 			<h4 class="text-center">Here, let me simplify that email for ya.</h4>
-				<form id="contactForm" accept-charset="UTF-8" action="https://usebasin.com/f/13de6ec5f15b" method="POST">
+				<form id="contactForm" accept-charset="UTF-8" action="https://usebasin.com/f/13de6ec5f15b" method="POST" onchange="checkForRequiredDone();">
 					<div class="form-group">
 						<div class="row">
 							<div class="col">
@@ -324,7 +321,7 @@
 						
 						<div class="priceElements row">
 							<div class="col">
-								<select id="visitorsAmt" name="visitorsAmt" class="form-control" onchange="updatePrice();" required>
+								<select id="visitorsAmt" name="visitorsAmt" class="form-control" onchange="updatePrice();">
 									<option disabled selected>Expected Monthly Visitors</option>
 									<option value="OneToFifty">1 - 50</option>
 									<option value="FiftyoneToTwoHundred">51 - 200</option>
@@ -332,10 +329,10 @@
 								</select>
 							</div>
 							<div class="col">
-								<input type="number" id="numOfPages" name="numOfPages" class="form-control" max="12" placeholder="Pages" onchange="updatePrice();" required>
+								<input type="number" id="numOfPages" name="numOfPages" class="form-control" max="12" placeholder="Pages" onchange="updatePrice();">
 							</div>
 							<div class="col">
-								<select id="finish" name="finish" class="form-control" onchange="updatePrice();" required>
+								<select id="finish" name="finish" class="form-control" onchange="updatePrice();">
 									<option disabled selected>Finish it in...</option>
 									<option value="30Plus">30+ Days</option>
 									<option value="14Days">14 Days</option>
@@ -381,9 +378,10 @@
 							<div class="col">
 								<label><input type="checkbox" name="agreeToTerms" id="agreeToTerms" required>&nbsp;I agree to the <a href="terms.html">terms of use.</a></label>
 							</div>
+							<div class="col">
+								<input type="Submit" class="btn">
+							</div>
 						</div>
-						
-						<input type="submit" class="btn">
 					</div>
 				</form>
 			</div>
