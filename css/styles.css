@@ -1,6 +1,8 @@
 /* Fixes */
 @media (min-width: 768px){.navbar-default {border-radius: 0;}}
 
+.grecaptcha-badge{display: none !important;}
+
 /* Font Faces */
 @font-face{font-family: channel; src: url(../font/Channel.ttf);}
 @font-face{font-family: Quesha; src: url(../font/Quesha.ttf);}
