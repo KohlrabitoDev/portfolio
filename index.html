@@ -308,7 +308,7 @@
 		<section id="contact">
 			<div class="container-fluid">
 			<h4 class="text-center">Here, let me simplify that email for ya.</h4>
-				<form id="contactForm" accept-charset="UTF-8" action="https://usebasin.com/f/13de6ec5f15b" method="POST">
+				<form id="invisible-recaptcha-form contactForm" accept-charset="UTF-8" action="https://usebasin.com/f/13de6ec5f15b" method="POST">
 					<div class="form-group">
 						<div class="row">
 							<div class="col">
@@ -383,12 +383,7 @@
 								<label><input type="checkbox" name="agreeToTerms" id="agreeToTerms" required>&nbsp;I agree to the <a href="terms.html" target="_blank">terms of use.</a></label>
 							</div>
 							<div class="col">
-								<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-								<script>function onSubmit(token) {document.getElementById("invisible-recaptcha-form").submit();}</script>
-								<form id="invisible-recaptcha-form">
-									<input type="submit" class="btn g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-callback='onSubmit' data-badge="inline">
-								</form>
+								<input type="submit" class="btn g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-callback='onSubmit' data-badge="inline">
 							</div>
 						</div>
 					</div>
@@ -414,6 +409,10 @@
 		</div>
 
 		<!-- Begin Scripts -->
+		<!-- Google Recaptcha -->
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		<script>function onSubmit(token) {document.getElementById("invisible-recaptcha-form").submit();}</script>
+		
 		<!-- jQuery library -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
