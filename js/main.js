@@ -72,15 +72,15 @@ const updatePrice = () =>{
 	console.log(`Finish in: ${finish}`);
 	
 	// Switch to prices
-	if(visitorsAmt == "OneToFifty"){
+	if(visitorsAmt == "notMuch"){
 		yearly = 12; // Google Domains
 		monthly = 3.99; // iFastNet
 		oneTime = 5; // Dev Fee
-	}else if(visitorsAmt == "FiftyoneToTwoHundred"){
+	}else if(visitorsAmt == "Medium"){
 		yearly = 12; // Google Domains
 		monthly = 6.99; // iFastNet
 		oneTime = 10; // Dev Fee
-	}else if(visitorsAmt == "OverThreeHundred"){
+	}else if(visitorsAmt == "Lots"){
 		yearly = 12; // Google Domains
 		monthly = 9.99; // iFastNet
 		oneTime = 50; // Dev Fee
@@ -103,10 +103,12 @@ const updatePrice = () =>{
 	// Price modifiers
 	let useOwnDomain = document.getElementById("useOwnDomain").checked;
 	let useOwnHosting = document.getElementById("useOwnHosting").checked;
+	let useInPortfolio = document.getElementById("useInPortfolio").checked;
 	let monthlyMaintenance = document.getElementById("monthlyMaintenance").checked;
 	
 	if(useOwnDomain){console.log("useOwnDomain is true"); yearly = 0;}
 	if(useOwnHosting){console.log("useOwnHosting is true"); monthly = 0;}
+	if(useInPortfolio){console.log(); oneTime = oneTime - 5;}
 	if(monthlyMaintenance){console.log("monthlyMaintenance is true"); monthly = monthly + 12}
 	//Round all numbers to two decimals
 		yearly = Math.round(yearly * 100) / 100;

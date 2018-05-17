@@ -259,19 +259,21 @@ footer i.fa{color: #fff !important; font-size: 2em; margin: 0 0.2em; cursor: poi
 @media screen and (max-width: 768px) {/* Tablet */
 	
 
-	header{padding: 0 4em;}
+	header{height: auto; padding: 0 4em;}
 	header h1{font-size: 1.5em;}
 	
-	#about{padding: 8px 0;}
+	#about{height: auto; padding: 8px 0;}
 	#about #portrait{width: 200px; height: 250px;}
 	
 	#process{height: auto;}
 	
-	#portfolio{}
+	#perks{height: auto;}
+	
+	#portfolio{height: auto;}
 	#portfolio .row{padding: 0;}
 	.imagebox .imagebox-desc {opacity: 1; font-size: 1em;}
 	
-	#contact{}
+	#contact{height: auto;}
 }
 
 @media screen and (max-width: 540px) { /* Breaking Point */

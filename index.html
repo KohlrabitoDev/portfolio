@@ -323,9 +323,9 @@
 							<div class="col">
 								<select id="visitorsAmt" name="visitorsAmt" class="form-control" onchange="updatePrice();">
 									<option disabled selected>Expected Monthly Visitors</option>
-									<option value="OneToFifty">1 - 50</option>
-									<option value="FiftyoneToTwoHundred">51 - 200</option>
-									<option value="OverThreeHundred">300+</option>
+									<option value="notMuch">Not a Lot</option>
+									<option value="Medium">Quite a Bit</option>
+									<option value="Lots">A LOT!</option>
 								</select>
 							</div>
 							<div class="col">
@@ -367,6 +367,10 @@
 							</div>
 							
 							<div class="col">
+								<label><input type="checkbox" name="useInPortfolio" id="useInPortfolio" onchange="updatePrice();" class="form-control">You may use the work you do for me in your portfolio.</label>
+							</div>
+							
+							<div class="col">
 								<label><input type="checkbox" name="monthlyMaintenance" id="monthlyMaintenance" onchange="updatePrice();" class="form-control">I will require monthly maintenance</label>
 							</div>
 						</div>
@@ -379,7 +383,12 @@
 								<label><input type="checkbox" name="agreeToTerms" id="agreeToTerms" required>&nbsp;I agree to the <a href="terms.html" target="_blank">terms of use.</a></label>
 							</div>
 							<div class="col">
-								<input type="Submit" class="btn">
+								<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+								<script>function onSubmit(token) {document.getElementById("invisible-recaptcha-form").submit();}</script>
+								<form id="invisible-recaptcha-form">
+									<input type="submit" class="btn g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-callback='onSubmit' data-badge="inline">
+								</form>
 							</div>
 						</div>
 					</div>
